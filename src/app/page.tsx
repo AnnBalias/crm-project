@@ -1,21 +1,14 @@
 import StatusLabel, { Status } from '@/app/components/status-label';
+import { headers } from 'next/headers';
+import AddCompanyButton from '@/app/components/add-company-button';
 
 export default function Home() {
+  console.log(headers());
+
   return (
     <main>
-      <h1 className="text-xl">Home page</h1>
-      <StatusLabel status={Status.Active} disabled={false}>
-        Active
-      </StatusLabel>
-      <StatusLabel status={Status.NotActive} disabled={true}>
-        Not Active
-      </StatusLabel>
-      <StatusLabel status={Status.Pending} disabled={false}>
-        Pending
-      </StatusLabel>
-      <StatusLabel status={Status.Suspended} disabled={true}>
-        Suspended
-      </StatusLabel>
+      <h1 className="text-xl">Home page {new Date().toTimeString()}</h1>
+      <AddCompanyButton />
     </main>
   );
 }
