@@ -1,4 +1,3 @@
-import StatusLabel, { Status } from '@/app/components/status-label';
 import { headers } from 'next/headers';
 import AddCompanyButton from '@/app/components/add-company-button';
 
