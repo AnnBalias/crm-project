@@ -11,7 +11,7 @@ export enum Status {
 export interface StatusLabelProps {
   children: React.ReactNode;
   status: Status;
-  disabled: boolean;
+  disabled?: boolean;
 }
 
 export default function StatusLabel({
