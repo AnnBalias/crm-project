@@ -1,0 +1,16 @@
+.gradient {
+    background-size: cover;
+}
+
+.gradient-1 {
+    background-image: url('/images/mesh-gradient-1.svg');
+}
+.gradient-2 {
+    background-image: url('/images/mesh-gradient-2.svg');
+}
+.gradient-3 {
+    background-image: url('/images/mesh-gradient-3.svg');
+}
+.gradient-4 {
+    background-image: url('/images/mesh-gradient-4.svg');
+}
