@@ -1,4 +1,4 @@
-import Header from '@/app/components/header';
+import React from 'react';
 import { notFound } from 'next/navigation';
 
 interface CompanyPageProps {
@@ -14,8 +14,8 @@ export default async function Page({ params }: CompanyPageProps) {
   }
 
   return (
-    <>
-      <Header>Companies ({String(localId)})</Header>
-    </>
+    <div className="py-6 px-10">
+      <p>{`Information about company (${id})`}</p>
+    </div>
   );
 }
